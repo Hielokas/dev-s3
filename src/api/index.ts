@@ -19,7 +19,7 @@ export class Api {
 
   static async getPostComments({ id }: { id: number }) {
     const { data } = await URL.get(`/posts/${id}/comments`);
-
+    
     return data;
   }
 }
